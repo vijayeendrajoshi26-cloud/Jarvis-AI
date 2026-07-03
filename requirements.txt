@@ -1,0 +1,16 @@
+openai
+python-dotenv
+SpeechRecognition
+faster-whisper
+pyttsx3
+PyQt6
+pyautogui
+keyboard
+mouse
+psutil
+requests
+beautifulsoup4
+sqlite-utils
+pydantic
+rich
+loguru
