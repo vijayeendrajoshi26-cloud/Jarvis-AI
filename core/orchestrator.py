@@ -1,15 +1,24 @@
-from core.router import Router
+from agents.manager import AgentManager
+
 
 class Orchestrator:
 
     def __init__(self):
+        self.manager = AgentManager()
 
-        self.router = Router()
+    def process(self, user_input):
 
-    def process(self, text):
+        print("STEP 1")
 
-        agent = self.router.route(text)
+        agent = self.manager.get_agent(user_input)
 
-        print(f"[Router] -> {agent}")
+        if agent is None:
+            return "Sorry, I don't know how to handle that."
 
-        return agent
+        print("Selected Agent ->", agent.name)
+
+        response = agent.execute(user_input)
+
+        print("Response ->", response)
+
+        return response

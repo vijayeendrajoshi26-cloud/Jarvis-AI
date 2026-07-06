@@ -1,6 +1,9 @@
 from core.startup import initialize
 from core.orchestrator import Orchestrator
 from core.config import config
+import os
+
+print("Running from:", os.getcwd())
 
 
 def main():

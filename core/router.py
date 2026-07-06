@@ -1,14 +1,10 @@
-class Router:
+def route(text):
+    text = text.lower()
 
-    def route(self, text: str):
+    if "remember" in text:
+        return "memory"
 
-        text = text.lower()
+    if "what is my" in text:
+        return "memory"
 
-        if "remember" in text:
-            return "memory"
-
-        elif "open" in text:
-            return "automation"
-
-        else:
-            return "assistant"
+    return "assistant"
