@@ -1,0 +1,6 @@
+MEMORY_SHORT = "short"
+MEMORY_LONG = "long"
+
+CATEGORY_PROFILE = "profile"
+CATEGORY_PROJECT = "project"
+CATEGORY_GENERAL = "general"
