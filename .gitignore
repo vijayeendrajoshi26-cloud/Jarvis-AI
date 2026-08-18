@@ -2,9 +2,17 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
 .env
+
 venv/
 .venv/
+
 data/cache/
 data/temp/
 data/logs/
+
+downloads/
+.vscode/
+
+memory/memory.json
